@@ -42,13 +42,12 @@ The implementation models:
 - Each agent optimizes:
   - Flight direction (ω)
   - Flight distance (d)
-- Reward inversely proportional to energy consumption  
-  \[
-  R_i = \begin{cases}
-  P_1, & \text{if UAV flies outside mission zone} \\
-  \frac{1}{E_j(t)}, & \text{otherwise}
-  \end{cases}
-  \]
+- Reward inversely proportional to energy consumption
+- 
+ $$
+  R_i = \begin{cases} P_1, & \text{If UAV flies away from the task area} \\
+  \frac{1}{E_{j(t)}}, & \text{Otherwise.} \end{cases} \
+$$
 
 ---
 
@@ -72,11 +71,11 @@ The implementation models:
   - Hover energy (constant)
   - Communication energy (transmission with base station)
 - **Objective**:  
-  Minimize total UAV energy consumption  
-  \[
-  \min \sum_{j=1}^M E_j \quad
-  s.t. \; \text{flight & boundary constraints}
-  \]
+  Minimize total UAV energy consumption
+  
+   min $\sum_{j=1}^{M} E_j$
+  
+  s.t. Constraints
 
 ---
 
@@ -91,11 +90,12 @@ The implementation models:
 
 ### Setup
 ```bash
-git clone https://github.com/<your-username>/UAV_Energy_Optimization.git
+git clone https://github.com/Pranav-Venkat-YK/UAV_Energy_Optimization.git
 cd UAV_Energy_Optimization
 pip install -r requirements.txt
 ```
 
+---
 
 ## 📊 Key Insights
 
