@@ -1,3 +1,4 @@
+
 # 🚁 Energy Consumption Optimization of UAV-Assisted Traffic Monitoring
 
 A Python-based simulation and analysis framework implementing **Multi-Agent Deep Deterministic Policy Gradient (MADDPG)** and its optimized variant **Tiny-MAUP** for UAV energy-efficient path planning in highway traffic monitoring scenarios.
@@ -93,6 +94,11 @@ $$
 git clone https://github.com/Pranav-Venkat-YK/UAV_Energy_Optimization.git
 cd UAV_Energy_Optimization
 pip install -r requirements.txt
+```
+
+### How to Run
+```bash
+python uav-energy-optimization.py
 ```
 
 ---
